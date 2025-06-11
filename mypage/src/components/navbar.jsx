@@ -1,0 +1,32 @@
+import React from "react";
+import Button from "./Button";
+
+const Navbar = () => {
+  return (
+    <nav className="w-full border-b border-white/10 text-white">
+      <div className="max-w-screen-xl mx-auto flex items-center justify-between px-6 py-4">
+        <span className="text-3xl font-semibold Libre Caslon Display tracking-wide text-[#c0c0c0] drop-shadow-[0_0_4px_#c0c0c0] hover:drop-shadow-[0_0_10px_#2978b5] transition">
+  <span className="text-blue-600">A</span>rtem <span className="text-blue-600">G</span>alkov
+</span>
+        <div className="flex gap-6 items-center">
+          <Button
+            href="mailto:aegalkov@gmail.com?body=Hello!"
+            className="bg-blue-600 text-white hover:bg-blue-700"
+          >
+            Mail to:
+          </Button>
+
+          <Button
+            href="/resume.pdf"
+            download
+            className="bg-transparent border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white"
+          >
+            Download CV
+          </Button>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

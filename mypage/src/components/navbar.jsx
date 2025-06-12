@@ -21,7 +21,7 @@ const Navbar = () => {
           </Button>
 
           <Button
-            href="/Galkov_A_CV.pdf"
+            href="/Galkov_A_CV.pdf" target="_blank" rel="noopener noreferrer"
             download
             className="bg-transparent border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white"
           >

@@ -1,23 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "./Button";
+import FloatingContactForm from "../sections/FloatingContactForm";
 
 const Navbar = () => {
+  const [showForm, setShowForm] = useState(false);
+
   return (
     <nav className="w-full border-b border-white/10 text-white">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between px-6 py-4">
         <span className="text-3xl font-semibold Libre Caslon Display tracking-wide text-[#c0c0c0] drop-shadow-[0_0_4px_#c0c0c0] hover:drop-shadow-[0_0_10px_#2978b5] transition">
-  <span className="text-blue-600">A</span>rtem <span className="text-blue-600">G</span>alkov
-</span>
+          <span className="text-blue-600">A</span>rtem <span className="text-blue-600">G</span>alkov
+        </span>
+
         <div className="flex gap-6 items-center">
           <Button
-            href="mailto:aegalkov@gmail.com?body=Hello!"
+            onClick={() => setShowForm(true)}
             className="bg-blue-600 text-white hover:bg-blue-700"
           >
-            Mail to:
+            Mail to
           </Button>
 
           <Button
-            href="/resume.pdf"
+            href="/Galkov_A_CV.pdf"
             download
             className="bg-transparent border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white"
           >
@@ -25,6 +29,8 @@ const Navbar = () => {
           </Button>
         </div>
       </div>
+
+      {showForm && <FloatingContactForm onClose={() => setShowForm(false)} />}
     </nav>
   );
 };

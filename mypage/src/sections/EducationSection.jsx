@@ -15,8 +15,10 @@ const EducationSection = ({ trigger }) => {
             <h3 className="text-lg font-semibold">{edu.university}</h3>
             <span className="text-sm text-gray-400">{edu.years}</span>
           </div>
-          <p className="text-sm text-gray-300">{edu.degree}</p>
-          <p className="text-xs text-gray-500 mt-1">{edu.location}</p>
+          <div>
+            <p className="text-sm text-gray-300">{edu.degree}</p>
+            <p className="text-xs text-gray-500 mt-1">{edu.location}</p>
+          </div>
         </div>
       ))}
     </div>

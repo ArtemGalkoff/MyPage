@@ -22,3 +22,5 @@ logs/
 # Build/cache
 .cache/
 vite.cache/
+
+.env

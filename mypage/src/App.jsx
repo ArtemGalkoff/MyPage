@@ -6,6 +6,7 @@ import Footer from "./sections/Footer"
 import Skills from "./sections/Skills"
 import MyProject from "./sections/Project"
 import EducationAndWork from './sections/EducationAndWork';
+import ScrollToTopButton from './sections/ScrollToTopButton'
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
       <Skills />
       <MyProject />
       <EducationAndWork />
+      <ScrollToTopButton />
       <Footer />
     </Layout>
   )

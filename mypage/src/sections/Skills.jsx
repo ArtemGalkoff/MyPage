@@ -92,13 +92,15 @@ const Skills = () => {
           ))}
         </div>
 <div className="lg:w-1/2 text-gray-300 text-lg leading-relaxed text-roboto">
-  <p className="mb-4">
+  <p className="mb-4 pt-4">
     Communicative, able to work in a team and take responsibility. I quickly 
     adapt to new tasks and always see things through to completion. I am highly 
     trainable and capable of self-organization. Skilled in effective time management 
     and open to constructive criticism.
   </p>
   <p>
+    My disciplined approach allows me to stay focused on goals, organize tasks efficiently, 
+    and uphold professional standards at all time.
     I have been involved in sports all my life (hand-to-hand combat, capoeira).
     I am fond of chess and yoga. I have visited 10 countries, tried myself
     in three different fields and achieved certain heights in each.

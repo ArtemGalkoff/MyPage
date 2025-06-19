@@ -34,7 +34,7 @@ const ProjectBlock = ({ imageSrc, imageAlt, link, text, reverse = false }) => (
       <img
         src={imageSrc}
         alt={imageAlt}
-        className="mx-auto h-20 w-auto"
+        className="mx-auto w-40 h-22 object-contain"
       />
     </a>
     <p className="max-w-md text-gray-300 text-center md:text-left">{text}</p>

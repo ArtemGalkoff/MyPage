@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="flex gap-6 items-center">
           <Button
             onClick={() => setShowForm(true)}
-            className="bg-blue-600 text-white hover:bg-blue-700"
+            className="bg-transparent border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white"
           >
             Mail to
           </Button>
